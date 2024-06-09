@@ -1,0 +1,53 @@
+/* DataFetchingComponent.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.data-table-wrapper {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 10%; /* Add margin from left and right */
+}
+
+.data-table {
+  width: 100%; /* Ensure the table takes up the full width of its wrapper */
+  border-collapse: collapse;
+  margin-top: 20px; /* Add top margin */
+  font-size: 1em;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a better look */
+  table-layout: fixed; /* Ensure equal width for columns */
+}
+
+.data-table thead tr {
+  background-color: #aed9e0;
+  color: #000000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 15px;
+  width: 25%; /* Equal width for each column (4 columns) */
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.data-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.data-table tbody tr:last-of-type {
+  border-bottom: 2px solid #aed9e0;
+}
+
+.data-table tbody tr.active-row {
+  font-weight: bold;
+  color: #aed9e0;
+}
